@@ -1,5 +1,38 @@
 # POSITION
 
+1. La página inicial
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/position.css">
+    <title>POSITION CSS</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="caja caja-1">1</div>
+        <div class="caja caja-2">2</div>
+        <div class="caja caja-3">3</div>
+        <div class="caja caja-4">4</div>
+        <div class="caja caja-5">5</div>
+        <div class="caja caja-6">6</div>        
+    </div>
+</body>
+</html>
+```
+El html anterior nos muestra que tenemos un contenedor div y 6 cajas, cada una con 2 clases, una clase general llamada caja y otra clase invidual para cada una, llamadas caja-1, caja-2, caja-3, caja-4, caja-5 y caja-6.
+
+Con lo cual logramos:
+![](assets/img/web1.jpg){width='100px'}
+
+
+
+
 Las propiedades que encontramos son:
 
 1. static: 
