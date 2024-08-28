@@ -27,9 +27,9 @@
     </body>
     </html>
     ```
-    El html anterior nos muestra que tenemos un contenedor div y 6 cajas, cada una con 2 clases, una clase general llamada caja y otra clase invidual para cada una, llamadas caja-1, caja-2, caja-3, caja-4, caja-5 y caja-6.
+    2. El html anterior nos muestra que tenemos un contenedor div y 6 cajas, cada una con 2 clases, una clase general llamada caja y otra clase invidual para cada una, llamadas caja-1, caja-2, caja-3, caja-4, caja-5 y caja-6.
 
-2. El estilo CSS
+2. El estilo CSS para el archivo style.css
 
     1. 
 
@@ -49,7 +49,6 @@
     .caja{
         width:100px;
         height: 100px;
-        line-height: 100px;
         text-align: center;
         color:white;
     }
@@ -74,14 +73,23 @@
         background-color: #5E704A;
     }
     ```
-    
-    El estilo configura en las etiquetas HTML y BODY margen:0, padding:0 y la configuración de box-sizing: border-box;
 
+    2. El estilo configura en las etiquetas HTML y BODY margen:0, padding:0 y la configuración de box-sizing: border-box;
 
-Con lo cual logramos:
+    3. La clase .contenedor tiene:
+        1.  Para el div esta configurada con un margin: 20vh auto; lo que quiere decir que tiene una margen de 20 viewport de alto y auto (centrado) en el viewport ancho.
+        2. El div tiene un borde de 5px solid black.
+        3. El div tiene un ancho de 300px.¨
+    4. La clase .caja tiene:
+        1. width:100px;
+        2. height: 100px;
+        3. text-align: center;
+        4. color:white;
+    5. Las cajas caja-1 al caja-5 tienen un background-color individual por cada una.
+3. Con lo cual logramos:
 ![](assets/img/web1.jpg){width='100px'}
 
-
+4. 2. El estilo CSS para el archivo position.css
 
 
 Las propiedades que encontramos son:
