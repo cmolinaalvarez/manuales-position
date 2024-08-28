@@ -85,9 +85,10 @@
         2. height: 100px;
         3. text-align: center;
         4. color:white;
-    5. Las cajas caja-1 al caja-5 tienen un background-color individual por cada una.
+    5. Las cajas caja-1, caja-2, caja-3, caja-4 y caja-5 tienen un background-color individual por cada una.
+
 3. Con lo cual logramos:
-![](assets/img/web1.jpg){width='100px'}
+<img src= "assets/img/web1.jpg" alt="Muestra position" style="border: 2px solid grey;">
 
 4. 2. El estilo CSS para el archivo position.css
 
