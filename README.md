@@ -88,7 +88,7 @@
     5. Las cajas caja-1, caja-2, caja-3, caja-4 y caja-5 tienen un background-color individual por cada una.
 
 3. Con lo cual logramos:
-<img src= "assets/img/web1.jpg" alt="Muestra position" style="border: 2px solid grey;">
+<img src= "assets/img/imagen1.jpg" alt="Muestra position" style="border: 2px solid grey;">
 
 4. 2. El estilo CSS para el archivo position.css
 
