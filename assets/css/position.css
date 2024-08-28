@@ -1,0 +1,63 @@
+/* POSITION */
+
+/* Propiedad position
+
+static: 
+relative
+absolute
+fixed
+sticky
+z-index : para el orden de sobreposición
+
+Como es el orden de sobreposición
+
+1. Primero los que tinen la propiedad z-index con 1 o mayor que 1.
+2. Segundo los que estan posicionados o que tengan establecida la propiedad position.
+3. Tercero los que no están posicionados o que no tengan establecida la propiedad position.
+4. Si dos position son iguales. Ej. relative con relative, se sobrepone la caja que registra el estilo de último en el archivo de estilos.
+5. Con la propiedad z-index le damos el index de sobreposición a la caja que necesitemos. Una buena práctica es establecer valores z-index de 10 en 10 o de 100 en 100.
+
+*/
+
+/* Propiedad static */
+
+.caja-1{
+    position: static; /*Estatic es el valor por defecto de todas las cajas que tenemos, por lo tanto no podemos realizar ningun cambio en la posición de los elementos. 
+                        Con la propiedad static no funcionan las propiedades top, left, bottom y right.
+                        Esto quiere decir que con la propiedad static el navegador coloca las cajas o elementos siguiendo el flujo de HTML.
+                    */
+    
+}
+
+.caja-1{
+    position: relative; /*
+                         - Relativa es la posición relativa a la caja donde se encuentra o elemento padre.
+                         - La caja con proiedad relative  se mueve teniendo en cuenta las propiedades top, left, bottom y right.
+                         - Si se tienen registradas las propíedades top y left, las propiedades right y bottom no funcionan. Prevalecen siempre las propiedaes top y left.
+                         - Se pueden utilizar valores negativos.
+                         -
+                        
+                    */
+    top:20px;
+    left: 20px;
+    z-index: 1000;
+    /* bottom: 20px; */
+    /* right:150px; */
+}
+
+.caja-2{
+    position: relative;
+    z-index: 2000;
+}
+
+
+/*Disply: flex;
+Permite cambiar orientación de un contenedor (div) y las cajas se adaptan al ancho total del contenedor, donde cada una de las cajas se extiende o se disminuye.*/
+
+/* flex-wrap :wrap; 
+Ajusta el tamaño de las cajas al tamaño real, extendiendo al alto de la caja contenedor.*/
+.contenedor{
+    display:flex;
+    flex-wrap: wrap;
+}
+
