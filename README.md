@@ -170,6 +170,33 @@
 
         <img src= "assets/img/imagen6.jpg" alt="Muestra position" style="border: 2px solid grey;">
 
+        Como al contenedor le habiamos puesto 300px de ancho, las seis cajas se adaptan a ese ancho disponible en la caja padre que tiene la clase .contenedor.
+
+    5. Flex-wrap: Esta propiedad permite que las cajas que se encuentran dentro del contenedor, mantengan su tamaño y cuando se cubra el ancho del contenedor, salten a la siguiente fila. Asi.
+
+    ```css
+
+        .contenedor{
+            display:flex;
+            flex-wrap:wrap;
+        }
+
+        .caja-1{
+            position: relative;
+        }
+    
+        .caja-2{
+
+        }
+
+    ```
+
+    <img src= "assets/img/imagen7.jpg" alt="Muestra position" style="border: 2px solid grey;">
+
+
+
+
+
     
 
 
