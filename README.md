@@ -101,14 +101,58 @@ Las propiedades que encontramos son:
     3. Esto quiere decir que con la propiedad static el navegador coloca las cajas o elementos siguiendo el flujo de HTML.
 
 2. relative: 
-    1. Es la posición relativa a la caja donde se encuentra o elemento padre.
-    2. La caja con proiedad relative  se mueve teniendo en cuenta las propiedades top, left, bottom y right. 
-    3. Si se tienen registradas las propíedades top y left, las propiedades right y bottom no funcionan. Prevalecen siempre las propiedaes top y left.
-    4. Se pueden utilizar valores negativos.
+    1. Es la posición relativa a la caja donde se encuentra o elemento padre. Ejemplo: en este caso tenemos que la clase .caja-1 tiene las propiedades position:relative, con un top:20px; y un left:20px; 
 
-3. absolute:
-4. fixed:
-5. sticky:
-6. z-index:
+    ```css
+        .caja-1{
+        position: relative;
+        top:20px;
+        left: 20px;}
+    ```
+    Esto indica que si las otras cajas no tienen la propiedad position, la caja o div en este caso, que tiene esta clase .caja-1 se posicionará por encima de las otras, como en este caso la caja 1 se posiciona sobre la caja número 2. Así.
+
+    <img src= "assets/img/imagen2.jpg" alt="Muestra position" style="border: 2px solid grey;">
+
+    2. Luego agregamos a la hoja de estilos position.css el siguiente código para la caja 2.
+
+     ```css
+        .caja-2{
+        position: relative;
+    }
+    ```
+
+    <img src= "assets/img/imagen3.jpg" alt="Muestra position" style="border: 2px solid grey;">
+
+    y observamos que ahora la caja 2 se encuentra por encima de la caja 1. 
+
+    <img src= "assets/img/imagen4.jpg" alt="Muestra position" style="border: 2px solid grey;">
+
+    Esto sucede porque las dos cajas tienen la position:relative; y el sistema ubica el solapamiento de acuerdo a la renderización de las clases css en el archivo CSS.
+
+    3. Para poder realizar un solapamiento de acuerdo a nuestras necesidades, tenemos la propiedad z-index, con el cual logramos posicionar fácilmente el solapamiento de nuestras cajas. Ejemplo:
+
+    Si queremos que la caja 1 esté por encima de la caja 2, colocamos el siguiente código.
+
+    ```css
+        .caja-1{
+        position: relative;
+        top:20px;
+        left: 20px;
+        z-index:200;
+        }
+    
+        .caja-2{
+            position: relative;
+            z-index:100;
+        }
+    ```
+    <img src= "assets/img/imagen5.jpg" alt="Muestra position" style="border: 2px solid grey;">
+
+    Observamos que tenemos la propiedad z-index:100 en la caja 2 y la propiedad z-index:200 en la caja 1, con lo cual, como la caja 1 tiene un mayor valor en la propiedad z-index, esta se pocisiona por encima de la caja 2.
+
+    
+
+
+
 
 ver manual en  https://www.youtube.com/watch?v=_e0ddNlc0Y8&t=1s
