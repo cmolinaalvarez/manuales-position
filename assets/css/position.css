@@ -1,11 +1,11 @@
+.contenedor{
+    display:flex;
+}
+
 .caja-1{
     position: relative;
-    top:20px;
-    left: 20px;
-    z-index:200;
 }
 
 .caja-2{
-    position: relative;
-    z-index:100;
+
 }
