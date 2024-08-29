@@ -193,6 +193,59 @@
 
     <img src= "assets/img/imagen7.jpg" alt="Muestra position" style="border: 2px solid grey;">
 
+    6. Si queremos posicionar una de las cajas que tenemos en el contenedor para que quede detras del contenedor padre, debemos registar para esa caja un z-index negativo. Asi.
+
+    Como se observa en el código siguiente, primero a la caja uno le damos un top de 50px y un left de 260px.
+
+    ```css
+    .contenedor{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .caja-1{
+        position: relative;
+        top:50px;
+        left:260px;
+    }
+
+    .caja-2{
+
+    }
+    ```
+    Esto nos mostraría el html de esta manera.
+
+    <img src= "assets/img/imagen8.jpg" alt="Muestra position" style="border: 2px solid grey;">
+
+    Y ahora si, para poner la caja 1 debajo del contenedor lo hacemos así.
+
+    ```css
+    .contenedor{
+        display:flex;
+        flex-wrap: wrap;        
+    }
+
+    .caja-1{
+        position: relative;
+        top:50px;
+        left:260px;
+        z-index:-10;
+    }
+
+    .caja-2{
+
+    }
+    ```
+    Esto nos mostraría el html de esta manera.
+
+    <img src= "assets/img/imagen9.jpg" alt="Muestra position" style="border: 2px solid grey;">
+
+
+
+
+
+
+
 
 
 
