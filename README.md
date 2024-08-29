@@ -260,7 +260,7 @@
     ```
     Esto nos mostraría el html de esta manera.
 
-    <img src= "assets/img/imagen9.jpg" alt="Muestra position" style="border: 2px solid grey;">
+    <img src= "assets/img/imagen10.jpg" alt="Muestra position" style="border: 2px solid grey;">
 
 
 
