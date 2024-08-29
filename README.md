@@ -240,7 +240,7 @@
 
     <img src= "assets/img/imagen9.jpg" alt="Muestra position" style="border: 2px solid grey;">
 
-    7. Propiedad absolute: Una caja con la propiedad absolute es una caja flotante, que su posición es absoluta de acuerdo a las medidas de la pantalla. al posicionar la caja 1 con propiedad absulute, esta deja un espacio en la posición inicial, el cual es ocupado por la caja que le sigue, en este caso por la caja 2. Veamos.
+    7. Propiedad absolute: Una caja con la propiedad absolute es una caja flotante, que su posición es absoluta de acuerdo a las medidas de la pantalla, si el contenedor no está posicionado. al posicionar la caja 1 con propiedad absulute, esta deja un espacio en la posición inicial, el cual es ocupado por la caja que le sigue, en este caso por la caja 2. Veamos.
 
     ```css
     .contenedor{
@@ -258,9 +258,34 @@
 
     }
     ```
-    Esto nos mostraría el html de esta manera.
+    Esto nos mostraría el html de esta manera cuando el contenedor no está posicionado.
 
     <img src= "assets/img/imagen10.jpg" alt="Muestra position" style="border: 2px solid grey;">
+
+    Ahora veamos el comportamiento cuando el contenedor está posicionado.
+
+     ```css
+    .contenedor{
+        display:flex;
+        flex-wrap: wrap;  
+        position:absolute;  
+    }
+
+    .caja-1{
+        position: absolute;
+        top:50px;
+        left:260px;        
+    }
+
+    .caja-2{
+
+    }
+    ```
+    Esto nos mostraría el html de esta manera cuando el contenedor si está posicionado.
+
+    <img src= "assets/img/imagen11.jpg" alt="Muestra position" style="border: 2px solid grey;">
+
+
 
 
 
