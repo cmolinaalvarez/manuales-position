@@ -268,7 +268,7 @@
     .contenedor{
         display:flex;
         flex-wrap: wrap;  
-        position:absolute;  
+        position:relative;  
     }
 
     .caja-1{
